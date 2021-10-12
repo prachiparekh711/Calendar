@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Calender" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryVariant">@color/theme_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/theme_color</item>
+        <item name="colorSecondaryVariant">@color/theme_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:itemBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.Calender.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryVariant">@color/theme_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/theme_color</item>
+        <item name="colorSecondaryVariant">@color/theme_color</item>
+        <item name="colorOnSecondary">@color/theme_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:itemBackground">@color/white</item>
+    </style>
+
+
+    <style name="ArrowStyle">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="MonthStyle">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="DayView">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/day_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="MetaView" parent="DayView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/meta_text_size</item>
+    </style>
+
+    <style name="WeekNumberStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:textSize">@dimen/day_monthly_text_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+</resources>

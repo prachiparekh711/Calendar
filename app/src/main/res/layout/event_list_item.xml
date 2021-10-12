@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_item_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/selector"
+    android:paddingStart="@dimen/activity_margin">
+
+    <RelativeLayout
+        android:id="@+id/event_item_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/medium_margin"
+        android:paddingEnd="@dimen/activity_margin"
+        android:paddingBottom="@dimen/medium_margin">
+
+        <RelativeLayout
+            android:id="@+id/rlTime"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/event_item_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/plusjakarta"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/day_text_size"
+                tools:text="13:00" />
+
+            <TextView
+                android:id="@+id/event_item_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_item_start"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/plusjakarta"
+                android:includeFontPadding="false"
+                android:text="15:00"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/day_text_size" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/event_item_color_bar"
+            android:layout_width="@dimen/event_color_bar_width"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rlMainView"
+            android:layout_alignBottom="@id/rlMainView"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toEndOf="@+id/rlTime"
+            android:background="@drawable/event_list_color_bar"
+            android:paddingVertical="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rlMainView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/event_item_color_bar"
+            android:background="@color/light_theme_color"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/event_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin"
+                android:ellipsize="end"
+                android:fontFamily="@font/plusjakarta"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/activity_margin"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/day_text_size"
+                tools:text="Event title" />
+
+            <TextView
+                android:id="@+id/event_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_item_title"
+                android:layout_marginStart="@dimen/activity_margin"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawableLeft="@drawable/ic_event_add"
+                android:drawablePadding="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/plusjakarta"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/activity_margin"
+                android:textColor="@color/off_day_color"
+                android:textSize="@dimen/day_text_size"
+                tools:text="Event description" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

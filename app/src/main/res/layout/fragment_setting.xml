@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragment.SettingFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_custom_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_custom_icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_add_holidays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_holidays" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_add_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact_birthday" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ic_add_anniversary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_anniversary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sync" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_privacy" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/rate_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_rate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_feed" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@color/divider_grey" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/share_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_type_dialog_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin"
+    android:paddingEnd="@dimen/activity_margin">
+
+    <com.simplemobiletools.commons.views.MyEditText
+        android:id="@+id/type_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/activity_margin"
+        android:layout_toLeftOf="@id/type_color"
+        android:backgroundTint="@color/theme_color"
+        android:hint="New event name"
+        android:inputType="textCapSentences"
+        android:maxLength="80"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/day_text_size" />
+
+    <ImageView
+        android:id="@+id/type_color"
+        android:layout_width="@dimen/color_sample_size"
+        android:layout_height="@dimen/color_sample_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/medium_margin" />
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#4C000000"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:background="@color/white"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="7.0dip"
+            card_view:cardElevation="6.0dip"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="6.0dip"
+                    android:fontFamily="@font/plusjakarta"
+                    android:text="Rate Us!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:fontFamily="@font/plusjakarta"
+                    android:text="How would you love this app?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/rate_us" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:gravity="center"
+                        android:padding="5.0dip"
+                        android:text="Yes"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:gravity="center"
+                        android:padding="5.0dip"
+                        android:text="No Thanks!"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

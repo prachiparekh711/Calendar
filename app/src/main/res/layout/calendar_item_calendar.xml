@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendar_item_calendar_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.simplemobiletools.commons.views.MySwitchCompat
+        android:id="@+id/calendar_item_calendar_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plusjakarta"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingEnd="@dimen/activity_margin"
+        android:paddingBottom="@dimen/activity_margin"
+        android:text="Calendar name"
+        android:textColor="@color/md_grey_black_dark"
+        android:textSize="@dimen/_12sdp"
+        app:switchPadding="@dimen/small_margin" />
+
+</RelativeLayout>

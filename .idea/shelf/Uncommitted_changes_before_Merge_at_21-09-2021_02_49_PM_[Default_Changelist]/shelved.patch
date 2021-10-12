@@ -1,0 +1,75 @@
+Index: app/src/main/java/com/daily/events/calender/Fragment/Home/DayFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.daily.events.calender.Fragment.Home\r\n\r\nimport android.os.Bundle\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport androidx.fragment.app.Fragment\r\nimport com.daily.events.calender.R\r\n\r\n// TODO: Rename parameter arguments, choose names that match\r\n// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER\r\nprivate const val ARG_PARAM1 = \"param1\"\r\nprivate const val ARG_PARAM2 = \"param2\"\r\n\r\n/**\r\n * A simple [Fragment] subclass.\r\n * Use the [DayFragment.newInstance] factory method to\r\n * create an instance of this fragment.\r\n */\r\nclass DayFragment : Fragment() {\r\n    // TODO: Rename and change types of parameters\r\n    private var param1: String? = null\r\n    private var param2: String? = null\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        arguments?.let {\r\n            param1 = it.getString(ARG_PARAM1)\r\n            param2 = it.getString(ARG_PARAM2)\r\n        }\r\n    }\r\n\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_day, container, false)\r\n    }\r\n\r\n    companion object {\r\n        /**\r\n         * Use this factory method to create a new instance of\r\n         * this fragment using the provided parameters.\r\n         *\r\n         * @param param1 Parameter 1.\r\n         * @param param2 Parameter 2.\r\n         * @return A new instance of fragment DayFragment.\r\n         */\r\n        // TODO: Rename and change types and number of parameters\r\n        @JvmStatic\r\n        fun newInstance(param1: String, param2: String) =\r\n            DayFragment().apply {\r\n                arguments = Bundle().apply {\r\n                    putString(ARG_PARAM1, param1)\r\n                    putString(ARG_PARAM2, param2)\r\n                }\r\n            }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/daily/events/calender/Fragment/Home/DayFragment.kt	(revision 4d4bb284666bda07c8641b1cd152d510921b36dd)
++++ app/src/main/java/com/daily/events/calender/Fragment/Home/DayFragment.kt	(date 1632215462556)
+@@ -39,15 +39,7 @@
+     }
+ 
+     companion object {
+-        /**
+-         * Use this factory method to create a new instance of
+-         * this fragment using the provided parameters.
+-         *
+-         * @param param1 Parameter 1.
+-         * @param param2 Parameter 2.
+-         * @return A new instance of fragment DayFragment.
+-         */
+-        // TODO: Rename and change types and number of parameters
++
+         @JvmStatic
+         fun newInstance(param1: String, param2: String) =
+             DayFragment().apply {
+Index: app/src/main/java/com/daily/events/calender/Services/SnoozeService.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.simplemobiletools.calendar.pro.services\r\n\r\nimport android.app.IntentService\r\nimport android.content.Intent\r\nimport com.daily.events.calender.Extensions.config\r\nimport com.daily.events.calender.Extensions.eventsDB\r\nimport com.daily.events.calender.Extensions.rescheduleReminder\r\nimport com.daily.events.calender.helpers.EVENT_ID\r\n\r\nclass SnoozeService : IntentService(\"Snooze\") {\r\n    override fun onHandleIntent(intent: Intent?) {\r\n        if (intent != null) {\r\n            val eventId = intent.getLongExtra(EVENT_ID, 0L)\r\n            val event = eventsDB.getEventWithId(eventId)\r\n            rescheduleReminder(event, config.snoozeTime)\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/daily/events/calender/Services/SnoozeService.kt	(revision 4d4bb284666bda07c8641b1cd152d510921b36dd)
++++ app/src/main/java/com/daily/events/calender/Services/SnoozeService.kt	(date 1631617135579)
+@@ -1,4 +1,4 @@
+-package com.simplemobiletools.calendar.pro.services
++package com.daily.events.calender.services
+ 
+ import android.app.IntentService
+ import android.content.Intent
+Index: app/src/main/java/com/daily/events/calender/Services/WidgetServiceEmpty.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.simplemobiletools.calendar.pro.services\r\n\r\nimport android.content.Intent\r\nimport android.widget.RemoteViewsService\r\n\r\nclass WidgetServiceEmpty : RemoteViewsService() {\r\n    override fun onGetViewFactory(intent: Intent) = EventListWidgetAdapterEmpty(applicationContext)\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/daily/events/calender/Services/WidgetServiceEmpty.kt	(revision 4d4bb284666bda07c8641b1cd152d510921b36dd)
++++ app/src/main/java/com/daily/events/calender/Services/WidgetServiceEmpty.kt	(date 1631617070171)
+@@ -1,7 +1,8 @@
+-package com.simplemobiletools.calendar.pro.services
++package com.daily.events.calender.services
+ 
+ import android.content.Intent
+ import android.widget.RemoteViewsService
++import com.daily.events.calender.Adapter.EventListWidgetAdapterEmpty
+ 
+ class WidgetServiceEmpty : RemoteViewsService() {
+     override fun onGetViewFactory(intent: Intent) = EventListWidgetAdapterEmpty(applicationContext)
+Index: app/src/main/java/com/daily/events/calender/Services/WidgetService.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.simplemobiletools.calendar.pro.services\r\n\r\nimport android.content.Intent\r\nimport android.widget.RemoteViewsService\r\nimport com.daily.events.calender.Adapter.EventListWidgetAdapter\r\n\r\nclass WidgetService : RemoteViewsService() {\r\n    override fun onGetViewFactory(intent: Intent) = EventListWidgetAdapter(applicationContext)\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/daily/events/calender/Services/WidgetService.kt	(revision 4d4bb284666bda07c8641b1cd152d510921b36dd)
++++ app/src/main/java/com/daily/events/calender/Services/WidgetService.kt	(date 1631617070171)
+@@ -1,4 +1,4 @@
+-package com.simplemobiletools.calendar.pro.services
++package com.daily.events.calender.services
+ 
+ import android.content.Intent
+ import android.widget.RemoteViewsService

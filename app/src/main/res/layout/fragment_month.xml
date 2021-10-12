@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/month_calendar_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.daily.events.calender.views.MonthViewWrapper
+        android:id="@+id/month_view_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rlMainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_view_wrapper"
+        android:visibility="visible">
+
+        <include layout="@layout/layout_monthview_event" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

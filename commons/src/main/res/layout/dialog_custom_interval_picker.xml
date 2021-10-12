@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_custom_interval_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_custom_interval_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin">
+
+        <com.simplemobiletools.commons.views.MyEditText
+            android:id="@+id/dialog_custom_interval_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/theme_color"
+            android:digits="0123456789"
+            android:ems="6"
+            android:fontFamily="@font/roboto"
+            android:hint="Enter here..."
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/md_grey_black_dark"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioGroup
+            android:id="@+id/dialog_radio_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_margin">
+
+            <com.simplemobiletools.commons.views.MyCompatRadioButton
+                android:id="@+id/dialog_radio_seconds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:layoutDirection="rtl"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:text="@string/seconds_raw"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.simplemobiletools.commons.views.MyCompatRadioButton
+                android:id="@+id/dialog_radio_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:layoutDirection="rtl"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:text="@string/minutes_raw"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.simplemobiletools.commons.views.MyCompatRadioButton
+                android:id="@+id/dialog_radio_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:layoutDirection="rtl"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:text="@string/hours_raw"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.simplemobiletools.commons.views.MyCompatRadioButton
+                android:id="@+id/dialog_radio_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:layoutDirection="rtl"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:text="@string/days_raw"
+                android:textColor="@color/md_grey_black_dark"
+                android:textSize="@dimen/_12sdp" />
+
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

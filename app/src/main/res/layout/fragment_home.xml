@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="home"
+        tools:context=".Fragment.HomeFragment">
+
+        <FrameLayout
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/line"
+            android:layout_marginBottom="@dimen/_20sdp" />
+
+        <LinearLayout
+            android:id="@+id/topLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_5sdp"
+            android:weightSum="4.5">
+
+            <ImageView
+                android:id="@+id/yearIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_year"
+                app:tint="@color/theme_color" />
+
+            <ImageView
+                android:id="@+id/monthIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_month" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_month"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/weekIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_week" />
+
+            <ImageView
+                android:id="@+id/dayIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_day" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/topLL"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:background="#CBCDD0" />
+
+    </RelativeLayout>
+</layout>

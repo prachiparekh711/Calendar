@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/plusjakarta"
+            android:text="@string/schedule"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgAddEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_event" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/month_day_no_events_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_margin"
+            android:paddingEnd="@dimen/activity_margin"
+            android:src="@drawable/ic_event_not_found"
+            android:visibility="gone" />
+
+        <com.simplemobiletools.commons.views.MyRecyclerView
+            android:id="@+id/month_day_events_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_animation"
+            android:scrollbars="vertical"
+            app:layoutManager="com.simplemobiletools.commons.views.MyLinearLayoutManager" />
+
+    </RelativeLayout>
+
+</LinearLayout>

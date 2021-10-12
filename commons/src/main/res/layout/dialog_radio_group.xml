@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_radio_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RadioGroup
+        android:id="@+id/dialog_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingBottom="@dimen/normal_margin" />
+
+</ScrollView>

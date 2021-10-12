@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.PolicyActivity">
+
+        <RelativeLayout
+            android:id="@+id/mTopLayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/mBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_left_vector"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:layout_toRightOf="@id/mBack"
+                android:fontFamily="@font/roboto"
+                android:text="Privacy Policy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/mWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mTopLayer" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="off_day_color">#6E7781</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="theme_color">#4285F4</color>
+    <color name="light_theme_color">#4D4285F4</color>
+    <color name="text_color">#262D33</color>
+    <color name="hint_color">#4D000000</color>
+    <color name="grey">#BCBFC2</color>
+    <color name="red">#F10750</color>
+
+    <color name="red_text">#FF5A5A</color>
+    <color name="default_birthdays_color">@color/md_blue_800</color>
+    <color name="default_holidays_color">@color/md_green_700</color>
+    <color name="default_anniversaries_color">@color/md_red_400_dark</color>
+
+    <color name="grey_view">#DFDFDF</color>
+</resources>

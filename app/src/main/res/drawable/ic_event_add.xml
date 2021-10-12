@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="19dp"
+    android:viewportWidth="20"
+    android:viewportHeight="19">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M6.687,1.5761V3.8764"
+        android:strokeWidth="1.15011"
+        android:strokeColor="#6E7781"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M9.7842,1.5761V3.8764"
+        android:strokeWidth="1.15011"
+        android:strokeColor="#6E7781"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M12.8816,1.5761V3.8764"
+        android:strokeWidth="1.15011"
+        android:strokeColor="#6E7781"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M16.7529,6.56V13.0773C16.7529,15.3775 15.5914,16.911 12.8813,16.911H6.6869C3.9769,16.911 2.8154,15.3775 2.8154,13.0773V6.56C2.8154,4.2598 3.9769,2.7263 6.6869,2.7263H12.8813C15.5914,2.7263 16.7529,4.2598 16.7529,6.56Z"
+        android:strokeWidth="1.15011"
+        android:strokeColor="#6E7781"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <group>
+        <clip-path android:pathData="M6.5244,13.4581l6.1944,-0l0,-6.1339l-6.1944,-0z" />
+        <path
+            android:fillColor="#6E7781"
+            android:pathData="M9.4948,13.4414C9.3944,13.4174 9.3181,13.3743 9.2395,13.2976C9.1609,13.2185 9.1125,13.1335 9.0907,13.0292C9.081,12.9849 9.0774,12.6507 9.0774,11.9486V10.9303H8.049C7.3401,10.9303 7.0025,10.9267 6.9577,10.9171C6.8537,10.8955 6.7666,10.8476 6.6867,10.7697C6.4726,10.5565 6.4726,10.2246 6.6867,10.0138C6.7666,9.9359 6.8537,9.888 6.9577,9.8652C7.0025,9.8556 7.3292,9.8521 8.049,9.8521H9.0774V8.8337C9.0774,8.1317 9.081,7.7974 9.0907,7.7531C9.1125,7.6489 9.1609,7.5638 9.2395,7.4859C9.4561,7.2727 9.79,7.2727 10.0029,7.4847C10.0816,7.5638 10.13,7.6501 10.1529,7.7531C10.1626,7.7974 10.1662,8.1209 10.1662,8.8337V9.8521H11.1946C11.9036,9.8521 12.2411,9.8556 12.2859,9.8652C12.3912,9.8868 12.4771,9.9347 12.5557,10.0126C12.771,10.227 12.771,10.5565 12.5569,10.7697C12.4771,10.8488 12.3827,10.8991 12.2823,10.9183C12.2448,10.9255 11.8104,10.9303 11.1934,10.9303H10.1662V11.9486C10.1662,12.6507 10.1626,12.9849 10.1529,13.0292C10.1312,13.1323 10.0828,13.2185 10.0041,13.2976C9.8662,13.4342 9.6811,13.4869 9.4948,13.4414Z" />
+    </group>
+</vector>

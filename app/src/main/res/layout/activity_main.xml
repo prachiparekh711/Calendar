@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".Activity.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer
+                android:id="@+id/navigationDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>
+
+            <RelativeLayout
+                android:id="@+id/topRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateTitleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/today"
+                    android:fontFamily="@font/plusjakarta"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/title_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp" />
+
+                <ImageView
+                    android:id="@+id/today"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_event"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_26sdp">
+
+                <ImageView
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_add_items" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hideBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6C000000"
+                android:visibility="gone" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_layer_name"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/swip_up" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lottie_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lottie_layer_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/plusjakarta"
+                android:text="@string/swipe_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_back"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:elevation="@dimen/_3sdp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <include
+                android:id="@+id/llMain"
+                layout="@layout/select_calendar_account" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llBottomSync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_back"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="0dp"
+            app:elevation="@dimen/_3sdp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <RelativeLayout
+                android:id="@+id/dialog_select_calendars_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <View
+                    android:id="@+id/mView"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/plusjakarta"
+                    android:text="@string/sync_ur"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/llBottom1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t1"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_not_now"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_cancel_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:paddingHorizontal="16dp"
+                        android:text="Not now"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/dialog_sync"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_ok_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:paddingHorizontal="16dp"
+                        android:text="Sync calendar"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

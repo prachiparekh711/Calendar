@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_radio_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:checked="true"
+    android:fontFamily="@font/roboto"
+    android:layoutDirection="rtl"
+    android:padding="@dimen/activity_margin"
+    android:paddingRight="@dimen/_20sdp"
+    android:text="@string/repeat_pattern"
+    android:textAlignment="textStart"
+    android:textColor="@color/md_grey_black_dark"
+    android:textSize="@dimen/_12sdp" />
